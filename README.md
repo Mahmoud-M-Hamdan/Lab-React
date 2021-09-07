@@ -10,3 +10,7 @@
 * Display images on the page and take their data from data.josn
 * Given that a user clicks on button under image, the number of Likes displayed on that image will increase by one.
 
+## Lab class 03
+
+* using bootstrab to make cards contain title , pic and title 
+* using bootstrab to display the pic much biger and appear the description when the user click on the button
