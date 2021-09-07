@@ -26,8 +26,7 @@ class HorendBeasts extends Component {
                         <Card.Title>{this.props.name}</Card.Title>
                         <Card.Text>
                             {this.props.title}
-                            <br />
-                            age:{this.props.age}
+                            
                         </Card.Text>
                         <Button 
                                 onClick={this.getHandleOpen}
