@@ -1,18 +1,48 @@
-import  { React,Component } from 'react'
-class HornedBeasts extends Component {
+
+
+import React, { Component } from 'react'
+import {
+    Card,
+    Button,
+    Col,
+} from 'react-bootstrap';
+
+class HorendBeasts extends Component {
+
+    getHandleOpen=()=>{
+        let description=this.props.description;
+        let title=this.props.title;
+        let image_url=this.props.image_url ;
+        this.props.handleOpen(description,title,image_url);
+    }
     render() {
         
         return (
-            <div>
-                <h2>Title: {this.props.title}</h2>
-                <img src={`${this.props.image_url}`} width={600} alt={'imagee'}/>
-                 <h1>{this.props.stateMoney}</h1>
-                <p>Description:{this.props.description}</p>
-            </div>
+            <>
+            <Col>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={this.props.image_url} style={{ height: '18rem'}} />
+                    <Card.Body>
+                        <Card.Title>{this.props.name}</Card.Title>
+                        <Card.Text>
+                            {this.props.title}
+                            <br />
+                            age:{this.props.age}
+                        </Card.Text>
+                        <Button 
+                                onClick={this.getHandleOpen}
+                                variant="primary"
+                        >
+                                Go somewhere
+                        </Button>
+                    </Card.Body>
+                </Card>
+            </Col>
+           
+        </>
         )
+
     }
 }
 
-export default HornedBeasts
-
-
+export default HorendBeasts
