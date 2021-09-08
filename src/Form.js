@@ -2,13 +2,13 @@
 import React, { Component } from 'react'
 
 class Form extends Component {
+    handleSubmit = (e)=>{this.props.handleSelect(e)}
     render() {
-
         return (
             <div>
                 <form onSubmit={this.props.handleSubmit}>
                     
-                    <select onChange={(e)=>{this.props.handleSelect(e);}}>
+                    <select onChange={this.handleSubmit}>
                         <option value="">Number of horns</option>
                         <option value="1"> one horns</option>
                         <option value="2">two horns</option>

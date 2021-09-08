@@ -5,8 +5,8 @@ class Main extends Component {
     
   
     render() {
-        let  ddata=userData.filter(e=>e.horns===2)
-
+        let  ddata=userData.filter(e=>e.horns===parseInt(this.props.speciality))
+console.log(this.props.speciality)
         return (
             <div className="row" >
                 {
