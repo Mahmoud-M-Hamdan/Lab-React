@@ -18,7 +18,7 @@ class App extends Component {
       description: "",
       title: "",
       image_url: "",
-      
+      speciality:"",
       horns:"",
       showUser: false
     }
@@ -42,7 +42,7 @@ class App extends Component {
       this.setState({
         speciality: speciality
       });
-      console.log(this.state.speciality);
+      console.log("speciality",this.state.speciality);
     
     }
     handleSubmit = (e) => {
@@ -67,7 +67,7 @@ class App extends Component {
               title={this.state.title}
               image_url={this.state.image_url} 
               />
-              <Main handleOpen={this.handleOpen} />
+              <Main speciality={this.state.speciality} handleOpen={this.handleOpen} />
               
           </> :
             ''
