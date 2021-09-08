@@ -45,6 +45,20 @@ Finish time:7pm
 
 Actual time needed to complete: 3h
 
+## Lab class 04
+
+* using form to get user choice .
+* using arr.filter to filter the array prop. 
+
+Number and name of feature: Feature 1. Filter by Numbers of Horns
+
+Estimate of time needed to complete: 2h
+
+Start time: 2pm
+
+Finish time:12
+
+Actual time needed to complete: more than 6h
 
 
 
