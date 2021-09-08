@@ -4,6 +4,8 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './Main';
 import BsModal from './BsModal';
+import Header from './Header'
+import Footer from './Footer'
 
 class App extends Component {
 
@@ -33,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <>
-     
+     <Header/>
         <Main handleOpen={this.handleOpen}/>
 
         <BsModal handleClose={this.handleClose} 
@@ -42,6 +44,7 @@ class App extends Component {
                 title={this.state.title} 
                 image_url={this.state.image_url} 
         />
+        <Footer/>
       </>
     )
   }
