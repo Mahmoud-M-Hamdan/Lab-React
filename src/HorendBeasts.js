@@ -1,6 +1,7 @@
 
 
 import React, { Component } from 'react'
+import Parent from './Parent';
 import {
     Card,
     Button,
@@ -23,7 +24,7 @@ class HorendBeasts extends Component {
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={this.props.image_url} style={{ height: '18rem'}} />
                     <Card.Body>
-                        <Card.Title>{this.props.name}</Card.Title>
+                        <Card.Title><Parent/> </Card.Title>
                         <Card.Text>
                             {this.props.title}
                             
