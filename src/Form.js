@@ -6,7 +6,7 @@ class Form extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.props.handleSubmit}>
+                <form onChange={this.props.handleSubmit}>
                     
                     <select onChange={this.handleSubmit}>
                         <option value="">Number of horns</option>
@@ -15,7 +15,7 @@ class Form extends Component {
                         <option value="3">three horns</option>
                         <option value="100">hundred horns</option>
                     </select>
-                    <input type="submit" />
+                   
                 </form>
             </div>
         )

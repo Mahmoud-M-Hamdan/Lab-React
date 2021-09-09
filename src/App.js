@@ -59,6 +59,8 @@ class App extends Component {
     return (
       <>
         <Header />
+        <Form handleSubmit={this.handleSubmit}
+          handleSelect={this.handleSelect} />
         {
           this.state.showUser ? <>
             <BsModal handleClose={this.handleClose}
@@ -76,8 +78,7 @@ class App extends Component {
 
 
 
-        <Form handleSubmit={this.handleSubmit}
-          handleSelect={this.handleSelect} />
+      
         <Footer />
       </>
     )
